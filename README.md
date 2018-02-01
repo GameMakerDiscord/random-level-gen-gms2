@@ -7,4 +7,4 @@ Finally, it uses binary math to detect for collisions in the level's DS Grid.
 
 Here is a screenshot:
 
-![Screenshot](https://imgur.com/iTyStyw)
+[Imgur](https://i.imgur.com/iTyStyw.gifv)
