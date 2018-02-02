@@ -5,9 +5,9 @@ This example project uses a DS Grid to generate a random level. This level gener
 - Create a grid
 - Fill the grid with VOID cells (some number that represents an area that can't be walked on)
 - Create a controller at the center of the grid
-- Move the controller in a direction (0, 90, 180, 270) and create a FLOOR cell in each location
+- Move the controller in a direction (0, 90, 180, 270) and create a FLOOR cell (some number that represents an area that CAN be walked on) in each location
 - If the controller hits a wall reverse the direction
-- Every step the controler has a random chance of choosing a new direction
+- Every step the controller has a random chance of choosing a new direction
 - Run the controller for a fixed amount of steps (400 or so)
 - Once the level has been generated, loop through and remove any isolated VOID cells (This just makes the level look cleaner and a bit less "random")
 
