@@ -1,6 +1,8 @@
 # Random Level Generation
 A random level generation example (similar to Nuclear Throne) using GameMaker Studio 2.
 
+Maintained by: uheartbeast
+
 This example project uses a DS Grid to generate a random level. This level generation process looks somewhat like this:
 - Create a grid
 - Fill the grid with VOID cells (some number that represents an area that can't be walked on)
