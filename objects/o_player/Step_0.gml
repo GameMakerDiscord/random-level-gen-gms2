@@ -30,6 +30,17 @@ if (x_speed_ > 0) {
 	image_xscale = -1;	
 }
 
+//reapply the fractions
+x_speed_ += x_speed_fraction;
+y_speed_ += y_speed_fraction;
+
+//store and remove the fractions
+x_speed_fraction = x_speed_ - (floor(abs(x_speed_)) * sign(x_speed_));
+x_speed_ -= x_speed_fraction;
+y_speed_fraction = y_speed_ - (floor(abs(y_speed_)) * sign(y_speed_));
+y_speed_ -= y_speed_fraction;
+
+
 // Move horizontally
 x += x_speed_;
 
