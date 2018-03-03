@@ -5,6 +5,17 @@ x_speed_ += _x_input * acceleration_;
 y_speed_ += _y_input * acceleration_;
 var _speed = point_distance(0, 0, x_speed_, y_speed_);
 var _direction = point_direction(0, 0, x_speed_, y_speed_);
+
+//reapply the fractions
+x_speed_ += x_speed_fraction;
+y_speed_ += y_speed_fraction;
+
+//store and remove the fractions
+x_speed_fraction = x_speed_ - (floor(abs(x_speed_)) * sign(x_speed_));
+x_speed_ -= x_speed_fraction;
+y_speed_fraction = y_speed_ - (floor(abs(y_speed_)) * sign(y_speed_));
+y_speed_ -= y_speed_fraction;
+
 if (_speed > max_speed_) {
 	x_speed_ = lengthdir_x(max_speed_, _direction);
 	y_speed_ = lengthdir_y(max_speed_, _direction);
